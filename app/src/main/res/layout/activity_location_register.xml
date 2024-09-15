@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ADE8F4"
+    android:backgroundTint="#ADE8F4"
+    tools:context=".LocationRegisterActivity">
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragmentContainerView2"
+        android:name="com.codebee.water_app.RegisterHeader"
+        android:layout_width="0dp"
+        android:layout_height="120dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="@color/blue3"
+        android:fontFamily="@font/averia_gruesa_libre"
+        android:text="Next"
+
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/addressCity"
+        app:layout_constraintStart_toStartOf="@+id/addressCity"
+        app:layout_constraintTop_toBottomOf="@+id/addressCity" />
+
+    <EditText
+        android:id="@+id/addressNo"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="40dp"
+        android:background="@drawable/input_field_design_log_in"
+        android:drawableStart="@drawable/baseline_email_24"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:hint="no"
+        android:inputType="text"
+        android:paddingStart="20dp"
+        android:textColor="#000000"
+        android:textColorHint="#00B4D8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <EditText
+        android:id="@+id/addressLine1"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/input_field_design_log_in"
+        android:drawableStart="@drawable/baseline_email_24"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:hint="line 1 "
+        android:inputType="text"
+
+        android:paddingStart="20dp"
+        android:textColor="#000000"
+        android:textColorHint="#00B4D8"
+        app:layout_constraintEnd_toEndOf="@+id/addressNo"
+        app:layout_constraintStart_toStartOf="@+id/addressNo"
+        app:layout_constraintTop_toBottomOf="@+id/addressNo" />
+
+    <EditText
+        android:id="@+id/addressLine2"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/input_field_design_log_in"
+        android:drawableStart="@drawable/baseline_email_24"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:hint="line 2 "
+        android:inputType="text"
+        android:paddingStart="20dp"
+        android:textColor="#000000"
+        android:textColorHint="#00B4D8"
+        app:layout_constraintEnd_toEndOf="@+id/addressLine1"
+        app:layout_constraintStart_toStartOf="@+id/addressLine1"
+        app:layout_constraintTop_toBottomOf="@+id/addressLine1" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/averia_gruesa_libre"
+        android:text="Address"
+        android:textColor="#000000"
+        android:textColorHint="#00B4D8"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fragmentContainerView2" />
+
+    <Spinner
+        android:id="@+id/addressCity"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/input_field_design_log_in"
+
+        android:backgroundTint="@color/blue6"
+        android:dropDownWidth="match_parent"
+
+
+        android:paddingStart="35dp"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="@+id/addressLine2"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/addressLine2"
+        app:layout_constraintTop_toBottomOf="@+id/addressLine2" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="#8F2D56"
+        android:text="back"
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fragmentContainerView2" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

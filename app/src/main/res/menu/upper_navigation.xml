@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navHome"
+        android:title="Home"
+        android:icon="@drawable/outline_home_24"
+        />
+
+    <item
+        android:id="@+id/navorder"
+        android:title="Orders"
+        android:icon="@drawable/outline_list_alt_24"
+        />
+    <item
+        android:id="@+id/navtrack"
+        android:icon="@drawable/outline_directions_car_filled_24"
+        android:title="Track" />
+    <item
+        android:id="@+id/navchat"
+        android:icon="@drawable/outline_chat_bubble_outline_24"
+        android:title="Chat"
+
+        />
+
+    <item
+        android:id="@+id/navprofile"
+        android:icon="@drawable/outline_person_outline_24"
+        android:title="Profile" />
+
+</menu>
